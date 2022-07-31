@@ -42,5 +42,5 @@ scrollAnimation.init();
 initDropDownMenu();
 initMenuMobile();
 initFuncionamento();
-fetchAnimais('../../json/animaisApi.json', '.numeros-grid');
+fetchAnimais('../json/animaisApi.json', '.numeros-grid');
 initFetchBitcoin();
