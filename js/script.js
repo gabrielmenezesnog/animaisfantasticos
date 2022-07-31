@@ -42,5 +42,8 @@ scrollAnimation.init();
 initDropDownMenu();
 initMenuMobile();
 initFuncionamento();
-fetchAnimais('../json/animaisApi.json', '.numeros-grid');
+fetchAnimais(
+  'https://gabrielmenezesnog.github.io/animaisfantasticos/json/animaisApi.json',
+  '.numeros-grid',
+);
 initFetchBitcoin();
