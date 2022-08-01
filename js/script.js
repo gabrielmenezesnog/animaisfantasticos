@@ -62,8 +62,5 @@ mobileMenu.init();
 const funcionamento = new Funcionamento('[data-semana]', 'aberto');
 funcionamento.init();
 
-fetchAnimais(
-  'https://gabrielmenezesnog.github.io/animaisfantasticos/json/animaisApi.json',
-  '.numeros-grid',
-);
+fetchAnimais('./json/animaisApi.json', '.numeros-grid');
 initFetchBitcoin();
