@@ -5,7 +5,7 @@ import Modal from './modules/modal.js';
 import ToolTip from './modules/tooltip.js';
 import DropDownMenu from './modules/dropDownMenu.js';
 import MobileMenu from './modules/menu-mobile.js';
-import initFuncionamento from './modules/funcionamento.js';
+import Funcionamento from './modules/funcionamento.js';
 import fetchAnimais from './modules/fetchAnimais.js';
 import initFetchBitcoin from './modules/fetchBitcoin.js';
 import ScrollAnimation from './modules/scrollAnimation.js';
@@ -59,7 +59,9 @@ const mobileMenu = new MobileMenu(
 );
 mobileMenu.init();
 
-initFuncionamento();
+const funcionamento = new Funcionamento('[data-semana]', 'aberto');
+funcionamento.init();
+
 fetchAnimais(
   'https://gabrielmenezesnog.github.io/animaisfantasticos/json/animaisApi.json',
   '.numeros-grid',
