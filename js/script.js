@@ -9,6 +9,7 @@ import Funcionamento from './modules/funcionamento.js';
 import fetchAnimais from './modules/fetchAnimais.js';
 import initFetchBitcoin from './modules/fetchBitcoin.js';
 import ScrollAnimation from './modules/scrollAnimation.js';
+import { SlideNav } from './modules/slide.js';
 
 // instanciando um novo objeto da classe SmoothScroll
 // o parâmetro é um querySelectorAll
@@ -64,3 +65,8 @@ funcionamento.init();
 
 fetchAnimais('./json/animaisApi.json', '.numeros-grid');
 initFetchBitcoin();
+
+const slide = new SlideNav('.slide', '.slide-wrapper');
+slide.init();
+slide.addControl('.custom-controls');
+slide.changeSlide(3);
